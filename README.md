@@ -1,23 +1,42 @@
-# PHP Hello World Docker Project
+# PHP Project
 
-This project is a simple PHP application that displays "Hello World" in the browser. The application is containerized using Docker, making it easy to deploy in any environment.
+This is a simple PHP project that prints "Hola Mundo" to the browser.
 
-## Description
-
-The `index.php` file contains a PHP script that outputs "Hello Mundo" when accessed through a web server. This project uses Docker to set up an Apache server with PHP, serving the `index.php` file.
-
-## Files
-
-- `index.php`: PHP script that outputs "Hello Mundo" when accessed.
-- `Dockerfile`: Docker configuration file to build and run the application.
-
-## Technology Versions
-
-- **PHP**: Version 7.4 (specified in the Dockerfile)
-- **Docker**: Compatible with the latest version (required for containerization)
+## Technologies Used
+- Language: PHP
+- Container: Docker
 
 ## Prerequisites
+- Docker installed
+- PHP installed locally (optional for direct execution without Docker)
 
-- [Docker](https://docs.docker.com/get-docker/) installed on your machine.
+## Project Files
+- *index.php*: Main file of the project that prints "Hola Mundo" to the browser.
+- *Dockerfile*: Docker file for building the Docker image.
 
+## Create Docker Image
 
+Run the following command in the project directory:
+~~~
+docker build -t kevineduardo14/helloworldphp .
+~~~
+## Run the Docker Container
+~~~
+docker run kevineduardo14/helloworldphp
+~~~
+
+##Login the Docker Hub
+~~~
+docker login
+~~~
+## Docker Desktop pull in Docker Hub
+~~~
+docker pull kevineduardo14/helloworldphp
+~~~
+
+## Imagen in Docker Hub
+
+https://hub.docker.com/repository/docker/kevineduardo14/helloworldphp/general
+
+# RailWay
+We log in and link to GitHub to deploy the repositories.
